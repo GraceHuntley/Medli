@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.biomarkhealth.medli.activities.AddNewMedActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/lets_go_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="4"
+            android:text="Lets Go!"
+            android:textColor="@color/biomark_white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/directions_upper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lets_go_text"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="4"
+            android:text="@string/add_med_first_page"
+            android:textColor="@color/biomark_white"
+            android:textSize="24sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <AutoCompleteTextView
+            android:id="@+id/med_autocomplete_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp" />
+
+        <ListView
+            android:id="@+id/dose_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/med_autocomplete_entry"
+            android:background="#c5ffffff"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</LinearLayout>

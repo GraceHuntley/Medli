@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MedLi</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="company_name">BioMark Health</string>
+
+    <string name="add_med_first_page">First lets try and help you find the right medication.</string>
+</resources>
